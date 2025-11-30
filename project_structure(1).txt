@@ -1,0 +1,95 @@
+# GameVoiceAI 项目结构
+
+```
+GameVoiceAI/
+│
+├── README.md                      # 项目说明文档
+├── requirements.txt               # Python依赖
+├── .env.example                   # 环境变量模板
+├── .gitignore                     # Git忽略文件
+│
+├── config/
+│   ├── __init__.py
+│   └── settings.py               # 配置文件（API keys, 模型参数等）
+│
+├── core/
+│   ├── __init__.py
+│   ├── screen_capture.py         # 屏幕截图模块
+│   ├── vision_model.py           # 多模态模型接口
+│   ├── speech_recognition.py    # 语音识别（ASR）
+│   ├── text_to_speech.py        # 语音合成（TTS）
+│   └── conversation_manager.py  # 对话管理和上下文
+│
+├── utils/
+│   ├── __init__.py
+│   ├── image_processor.py       # 图像预处理
+│   ├── audio_processor.py       # 音频处理
+│   └── logger.py                # 日志工具
+│
+├── ui/
+│   ├── __init__.py
+│   └── gui.py                   # 图形界面（可选）
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_capture.py
+│   ├── test_vision.py
+│   └── test_audio.py
+│
+├── examples/
+│   ├── demo_basic.py            # 基础演示
+│   └── demo_game.py             # 游戏场景演示
+│
+├── docs/
+│   ├── architecture.md          # 架构设计文档
+│   ├── api_reference.md         # API参考
+│   └── deployment.md            # 部署指南
+│
+└── main.py                      # 主程序入口
+```
+
+## 模块职责说明
+
+### core/ - 核心功能模块
+- **screen_capture.py**: 游戏画面捕获，支持全屏/窗口/区域截图
+- **vision_model.py**: 封装多模态大模型API调用
+- **speech_recognition.py**: 实时语音识别
+- **text_to_speech.py**: 文本转语音输出
+- **conversation_manager.py**: 管理对话历史和上下文
+
+### utils/ - 工具模块
+- **image_processor.py**: 图像压缩、格式转换、base64编码
+- **audio_processor.py**: 音频录制、格式转换
+- **logger.py**: 统一日志管理
+
+### ui/ - 用户界面（可选）
+- 简单的控制面板
+- 显示对话历史
+- 调整参数设置
+
+### tests/ - 测试模块
+- 单元测试
+- 集成测试
+
+## 开发优先级
+
+**Phase 1 (Week 1-2)**: 基础功能
+1. screen_capture.py - 截图功能
+2. vision_model.py - 模型调用
+3. main.py - 基础流程串联
+
+**Phase 2 (Week 3-4)**: 语音交互
+1. speech_recognition.py
+2. text_to_speech.py
+3. conversation_manager.py
+
+**Phase 3 (Week 5-6)**: 优化和集成
+1. 性能优化
+2. UI界面
+3. 完善文档
+
+**Phase 4 (Week 7-8)**: 测试和论文
+1. 完整测试
+2. Bug修复
+3. 撰写论文
+```
