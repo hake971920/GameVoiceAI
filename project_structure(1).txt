@@ -30,15 +30,6 @@ GameVoiceAI/
 │   ├── __init__.py
 │   └── gui.py                   # 图形界面（可选）
 │
-├── tests/
-│   ├── __init__.py
-│   ├── test_capture.py
-│   ├── test_vision.py
-│   └── test_audio.py
-│
-├── examples/
-│   ├── demo_basic.py            # 基础演示
-│   └── demo_game.py             # 游戏场景演示
 │
 ├── docs/
 │   ├── architecture.md          # 架构设计文档
@@ -93,3 +84,119 @@ GameVoiceAI/
 2. Bug修复
 3. 撰写论文
 ```
+
+GameVoiceAI 参考项目清单
+🎯 最相关的核心项目
+1. multimodal-gamer ⭐⭐⭐
+仓库: joshbickett/multimodal-gamer
+功能: 让多模态模型玩游戏的框架
+亮点:使用与人类相同的输入输出方式
+可适配多种多模态模型和游戏
+直接相关于你们的项目
+学习重点: 游戏画面捕获、模型集成架构
+2. voice-chat-ai ⭐⭐⭐
+仓库: bigsk1/voice-chat-ai
+功能: 完整的语音AI聊天系统
+亮点:支持 Ollama、OpenAI、Anthropic、xAI
+集成多种TTS引擎（XTTS、OpenAI、ElevenLabs、Kokoro）
+包含屏幕查看功能："what's on my screen"
+有Web UI界面
+学习重点: 语音交互完整流程、多模型切换架构
+3. multimodal-ai-assistant ⭐⭐
+仓库: chrisputzu/multimodal-ai-assistant
+功能: 本地运行的多模态AI助手
+亮点:使用 Chainlit 框架
+集成 Langchain 和 ChatOllama
+语音转文字和文字转语音
+包含图像生成功能
+学习重点: 本地部署方案、Chainlit框架使用
+🎤 语音识别相关
+4. WhisperLive ⭐⭐⭐
+仓库: collabora/WhisperLive
+功能: 近实时的Whisper实现
+亮点:超低延迟对话
+支持多种后端（faster_whisper、tensorrt、openvino）
+可同时服务多个客户端
+包含VAD（语音活动检测）
+学习重点: 实时语音识别、性能优化
+5. whisper.cpp ⭐⭐⭐
+仓库: ggml-org/whisper.cpp
+功能: Whisper的C++高性能实现
+亮点:轻量级、高性能
+跨平台（iOS、Android、macOS等）
+包含实时转录工具
+有命令行工具和服务器模式
+学习重点: 性能优化、跨平台方案
+6. RealtimeVoiceChat
+仓库: KoljaB/RealtimeVoiceChat
+功能: 实时AI语音聊天
+亮点:近实时响应
+支持多种TTS引擎
+Docker部署方案
+Web界面
+学习重点: 实时交互架构、WebSocket使用
+🎮 游戏AI相关
+7. GPA-LM (调研必看)
+仓库: BAAI-Agents/GPA-LM
+功能: 游戏AI论文列表
+亮点:收录大量最新论文
+涵盖LLM在游戏中的应用
+包含多模态大模型研究
+学习重点: 论文参考、最新研究方向
+8. ai-game-devtools
+仓库: Yuan-ManX/ai-game-devtools
+功能: AI游戏开发工具集合
+亮点:收录各种游戏AI工具
+涵盖LLM、Agent、多模态等
+学习重点: 工具生态了解
+9. awesome-game-ai
+仓库: datamllab/awesome-game-ai
+功能: 游戏AI资源精选列表
+亮点:多智能体强化学习资源
+各类游戏环境和框架
+学习重点: 强化学习方向（可选）
+🔧 技术参考项目
+10. Game-Bot
+仓库: ardamavi/Game-Bot
+功能: 通过观看学习玩游戏的AI
+亮点:记录键盘鼠标操作
+深度学习训练
+简单易懂的实现
+学习重点: 输入捕获、简单AI实现
+11. whisper_dictation
+仓库: themanyone/whisper_dictation
+功能: 离线语音输入工具
+亮点:完全离线
+语音控制功能
+截图和网络搜索集成
+学习重点: 语音命令系统
+12. openai-whisper-talk
+仓库: supershaneski/openai-whisper-talk
+功能: 语音对话应用
+亮点:多个聊天机器人角色
+不同语言和声音
+基于Nuxt框架
+学习重点: 角色系统设计、前端集成
+📚 推荐学习顺序
+Phase 1: 基础理解（本周）
+multimodal-gamer - 了解游戏AI整体架构
+voice-chat-ai - 学习完整的语音交互流程
+whisper.cpp - 理解Whisper的高效实现
+Phase 2: 深入技术（第2-3周）
+WhisperLive - 实时语音处理
+multimodal-ai-assistant - 多模态集成方案
+RealtimeVoiceChat - 实时对话系统
+Phase 3: 优化提升（第4-5周）
+GPA-LM - 阅读相关论文
+Game-Bot - 学习输入捕获技术
+其他项目根据需要参考
+🎯 直接可用的代码片段来源
+从 voice-chat-ai 学习：
+✅ 语音识别模块设计
+✅ TTS引擎切换机制
+✅ 屏幕截图集成
+✅ Web UI设计
+从 multimodal-gamer 学习：
+✅ 游戏控制接口
+✅ 模型适配层
+✅ 
