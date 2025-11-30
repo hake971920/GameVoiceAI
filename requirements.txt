@@ -1,0 +1,23 @@
+# Core
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# Vision & Screen Capture
+mss>=9.0.1              # 高性能跨平台截屏
+Pillow>=10.0.0          # 图像处理
+opencv-python>=4.8.0    # 计算机视觉
+
+# AI Models
+openai>=1.0.0           # OpenAI API Client (兼容其他OpenAI格式API)
+# google-generativeai   # Gemini (Optional)
+# anthropic             # Claude (Optional)
+
+# Audio (Placeholder for Phase 2)
+# sounddevice
+# numpy
+# scipy
+# edge-tts
+# openai-whisper
+
+# UI (Optional)
+# tkinter / PyQt6 / NiceGUI
